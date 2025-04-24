@@ -1,0 +1,52 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Se crean los colores como varibles para que sea mas facil realizar los cambios esteticos */
+:root{
+    --color_background_body:#faf6f9;
+    --color_background_header:#e0c739; 
+    --color_background_main:#69f7f7;
+    --color_background_footer:#e594e7;
+}
+
+body {
+	background: var(--color_background_body);
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+
+.header {
+    background: var(--color_background_header);
+    width: 90vw;
+    margin-left: 5vw;
+}
+
+.nav_list{
+    /* Le saco la viñetas */
+    list-style: none;
+    /* le saco el subrayado */
+    text-decoration: none;
+    color:red;
+
+}
+
+.main {
+    background: var(--color_background_main);
+    width: 90vw;
+    margin-left: 5vw;
+}
+
+.video{
+    width: 70%;
+    }
+
+.footer {
+    background: var(--color_background_footer);
+    width: 90vw;
+    margin-left: 5vw;
+}
