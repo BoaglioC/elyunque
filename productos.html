@@ -3,86 +3,181 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Linea de estilos para los productos en oferta -->
+    <link rel="stylesheet" href=".\css\estilo_productos.css">
     <title>Productos</title>
 </head>
 <body>
 
-    <header class="header">
-        <img src=".\imagenes\logos\yunque.jpg" alt="Yunque" width="15%">
-        <h1>Ferretería el Yunque</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html" target="_blanck">Main</a></li>
-                
-                <li><a href="productos.html">Productos</a>  </li>
-  
-                <li><a href="contacto.html" target="_blanck">Contacto</a></li>
-                <li>Carrito</li>
-            </ul>
+    <header>
+
+        <section class="logo">
+            <img class="imglogo" src=".\imagenes\logos\yunque.png" alt="Yunque" width="15%">
+            <h1>El Yunque</h1>
+        </section>
+
+        <nav >
+            <a href="./index.html" target="_blanck">Main</a>
+            <a href="./productos.html" target="_blanck">Productos</a>
+            <a href="./contacto.html" target="_blanck">Contacto</a></li>
         </nav>
+
     </header>
 
-    <hr>
 
-    <main class="main">
+
+    <main>
 
         <h2>Herramientas</h2>
 
-        <section class="tarjeta">           
-            <img src=".\imagenes\herramientas\martillo.png" alt="Martillo" width="15%">
-            <p>Martillo de uso general</p>
-            <p>Precio: $8000,00</p>
-            <button>Agregar al Carrito</button>
-        </section>
-        <section class="tarjeta">
-            <img src=".\imagenes\herramientas\lijadora_excentrica.png" alt="Lijadora Excentrica" width="15%">
-            <p>Lijadora excéntrica</p>
-            <p>Precio: $140000,00</p>
-            <button>Agregar al Carrito</button>
+        <section class="contenedor">
+
+            <section class="tarjeta">   
+                <section class="marco">     
+                    <img src=".\imagenes\herramientas\martillo.png" alt="Martillo">
+                </section>
+                <p>Martillo de uso general</p>
+                <p>Precio: $8000,00</p>
+                <button>Agregar al Carrito</button>
+            </section>
+
+            <section class="tarjeta">
+                <section class="marco">
+                    <img src=".\imagenes\herramientas\esmeril_angular.png" alt="Esmeril angular" >                        
+                </section>
+
+                <p>Esmeril angular</p>
+                <p>Precio: $120000,00</p>
+                <button>Agregar al Carrito</button>                    
+            </section>
+
+            <section class="tarjeta">
+                <section class="marco">
+                    <img src=".\imagenes\herramientas\destornillador.png" alt="Destornilladores" >                        
+                </section>
+                <p>Destornilladores</p>
+                <p>Precio: $12000,00</p>
+                <button>Agregar al Carrito</button>                    
+            </section>
+
+             <section class="tarjeta">
+                <section class="marco">
+                    <img src=".\imagenes\herramientas\lijadora_excentrica.png" alt="Lijadora excentrica" >                        
+                </section>
+                <p>Lijadora excentrica</p>
+                <p>Precio: $115000,00</p>
+                <button>Agregar al Carrito</button>                    
+            </section>
+
+            <section class="tarjeta">
+                <section class="marco">
+                    <img src=".\imagenes\herramientas\taladro.png" alt="Taladro" >                        
+                </section>
+                <p>Taladro</p>
+                <p>Precio: $83000,00</p>
+                <button>Agregar al Carrito</button>                    
+            </section>       
         </section>
 
         <h2>Insumos</h2>
 
-        <section class="tarjeta">
-            <img src=".\imagenes\insumos\brocas_set.jpg" alt="Set de Brocas" width="15%">
-            <p>Set de brocas</p>
-            <p>Precio: $15000,00</p>
-            <button>Agregar al Carrito</button>
-        </section>
-        <section class="tarjeta">
-            <img src=".\imagenes\insumos\disco_corte.jpg" alt="Disco de corte" width="15%">
-            <p>Disco de corte</p>
-            <p>Precio: $5000,00</p>
-            <button>Agregar al Carrito</button>
+        <section class="contenedor">
+            <section class="tarjeta">
+                <section class="marco">
+                    <img src=".\imagenes\insumos\brocas_set.png" alt="Set de Brocas" >
+                </section>
+                <p>Set de brocas</p>
+                <p>Precio: $15000,00</p>
+                <button>Agregar al Carrito</button>
+            </section>
+            <section class="tarjeta">
+                <section class="marco">
+                    <img src=".\imagenes\insumos\disco_corte.png" alt="Disco de corte" >
+                </section>
+                <p>Disco de corte</p>
+                <p>Precio: $5000,00</p>
+                <button>Agregar al Carrito</button>
+            </section>
+
+            <section class="tarjeta">
+                <section class="marco">
+                    <img src=".\imagenes\insumos\disco_pulir.png" alt="Disco de pulir" >
+                </section>
+                <p>Disco de pulir</p>
+                <p>Precio: $5000,00</p>
+                <button>Agregar al Carrito</button>
+            </section>
+
+            <section class="tarjeta">
+                <section class="marco">
+                    <img src=".\imagenes\insumos\disco_sierra.png" alt="Disco sierra" >
+                </section>
+                <p>Disco sierra</p>
+                <p>Precio: $5000,00</p>
+                <button>Agregar al Carrito</button>
+            </section>
+
+            <section class="tarjeta">
+                <section class="marco">
+                    <img src=".\imagenes\insumos\brocas_escalonadas.png" alt="Brocas escalonadas" >
+                </section>
+                <p>Brocas escalonadas</p>
+                <p>Precio: $55300,00</p>
+                <button>Agregar al Carrito</button>
+            </section>
         </section>
 
         <h2>Elementos de seguridad</h2>
 
-        <section class="tarjeta">
-            <img src=".\imagenes\seguridad\botin_seguridad.jpg" alt="Botines de seguridad" width="15%">
-            <p>Botines de Seguridad</p>
-            <p>Precio: $80000,00</p>
-            <button>Agregar al Carrito</button>
-        </section>
-        <section class="tarjeta">
-            <img src=".\imagenes\seguridad\guante_cuero.png" alt="Guantes de cuero" width="15%">
-            <p>Guantes de cuero</p>
-            <p>Precio: $9000,00</p>
-            <button>Agregar al Carrito</button>
+        <section class="contenedor">
+            <section class="tarjeta">
+                <section class="marco">
+                    <img src=".\imagenes\seguridad\botin_seguridad.png" alt="Botines de seguridad" >
+                </section>                
+                <p>Botines de Seguridad</p>
+                <p>Precio: $80000,00</p>
+                <button>Agregar al Carrito</button>
+            </section>
+
+            <section class="tarjeta">
+                <section class="marco">
+                    <img src=".\imagenes\seguridad\guante_cuero.png" alt="Guantes de cuero">
+                </section>
+                <p>Guantes de cuero</p>
+                <p>Precio: $9000,00</p>
+                <button>Agregar al Carrito</button>
+            </section>
+
+            <section class="tarjeta">
+                <section class="marco">
+                    <img src=".\imagenes\seguridad\mascara_filtro.png" alt="Mascara con filtro">
+                </section>
+                <p>Mascara con filtro</p>
+                <p>Precio: $21000,00</p>
+                <button>Agregar al Carrito</button>
+            </section>
+
+            <section class="tarjeta">
+                <section class="marco">
+                    <img src=".\imagenes\seguridad\mascara_soldar_fotosensible.png" alt="Mascara de soldar con visor fotosensible">
+                </section>
+                <p>Mascara de soldar con visor fotosensible</p>
+                <p>Precio: $32800,00</p>
+                <button>Agregar al Carrito</button>
+            </section>
+
         </section>
 
     </main>
     
-    <hr>
 
-    <footer class="footer">
+
+    <footer>
         <h3>Ferretería el Yunque</h3>
-        <p>Avenida Mitre 5010- Villa Dominico (Avellaneda).</p>
-        <p>Tel. (011) 1111111</p>
         <section class="sociales">
-            <a href="#"> <img src=".\imagenes\logos\facebook.png" alt="Facebook" width="3%">   </a>
-            <a href="#"> <img src=".\imagenes\logos\whatsapp.png" alt="Whatsapp" width="3%">   </a>
-            <a href="#"> <img src=".\imagenes\logos\instagram.png" alt="Instagram" width="3%"> </a>
+            <a href="https://es-la.facebook.com/" target="_blanck"> <img src=".\imagenes\logos\facebook.png" alt="Facebook">   </a>
+            <a href="https://web.whatsapp.com/" target="_blanck"> <img src=".\imagenes\logos\whatsapp.png" alt="Whatsapp">   </a>
+            <a href="https://www.instagram.com/" target="_blanck"> <img src=".\imagenes\logos\instagram.png" alt="Instagram"> </a>
         </section>
     </footer>
 
