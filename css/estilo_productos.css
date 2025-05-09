@@ -6,10 +6,10 @@
 
 /* Se crean los colores como varibles para que sea mas facil realizar los cambios esteticos */
 :root{
-    --color_background_body:#faf6f9;
-    --color_background_header:#e0c739; 
-    --color_background_main:#69f7f7;
-    --color_background_footer:#e594e7;
+    --color_background_body:#a5727228;
+    --color_background_header:#793b3ba9; 
+    --color_background_main:#7a50506c;
+    --color_background_footer:#793b3ba9;
 }
 
 body {
@@ -19,14 +19,133 @@ body {
     margin: 0;
 }
 
-.header {
+
+
+header {
     background: var(--color_background_header);
+    width: 90vw;
+    height: 20vh;
+    margin-left: 5vw;
+    display: flex;
+    flex-direction: column;
 }
 
-.main {
+/* Sección del logo */
+.logo{
+    display: flex;
+    /* Quiero que la imagen y el texto del logo se alineen centralmente entre ellos */
+    align-items: center;
+}
+.logo img{
+    width: 6rem;
+}
+
+.logo h1{
+    font-size: 2.5rem;
+}
+
+/* Sección de la barra de navegación */
+nav{
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav a {
+    padding-right: 2rem;
+    font-size: 1.2rem;
+}
+/* Sección del cuerpo principal*/
+
+main {
     background: var(--color_background_main);
+    width: 90vw;
+    margin-left: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
 }
 
-.footer {
-    background: var(--color_background_footer);
+main h2{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 }
+
+
+/* Sección de las tarjetas de información general */
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+.tarjeta {
+    width: 15rem;
+    height: 20rem;
+    border: 2px solid #0000000e;
+    border-radius: 8px;
+    margin:0.5rem;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.marco{
+    /* Este marco se crea fijo para limitar las imagenes */
+    /* haciendo esto es mas facil posicionar las tarjetas */
+    width: 14rem;
+    height: 10rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    /* border: 2px solid #0000000e; */
+}
+
+.marco img{
+    /*Fijo el ancho de la imagen y le digo que cubra */
+    /* el marco manteniendo la relacion de aspecto*/
+    width: 10rem;
+    object-fit: cover;
+}
+
+
+
+.tarjeta  p{
+    text-align: justify;
+    padding-bottom: 0.5rem;
+    /* Estas lineas de abajo permiten crecer o achicarse para obligar que el boton */
+    /* quede abajo de la tarjeta */
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.tarjeta button{
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 6px;
+    width: 10rem;
+}
+
+/* Sección del pie de página */
+
+footer {
+    background: var(--color_background_footer);
+    width: 90vw;
+    margin-left: 5vw;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3rem;
+}
+
+.sociales{
+    display: flex;
+    padding: 1rem;
+    gap: 1rem;
+}
+.sociales img{
+    width: 2rem;
+}
+

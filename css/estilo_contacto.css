@@ -63,52 +63,115 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2rem;
 }
 
-main h2{
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-}
-main p{
-    padding-bottom: 0.5rem;
-    text-align: justify;
-}
 
-main .video{
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    width: 60vw;
-    min-width: 23rem;
-}
 
-/* Sección de las tarjetas de información general */
-.atencion {
+/* Contenedor informacion y formulario */
+.contenedor{
     display: flex;
+    flex-direction:row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-
+    width: 80vw;
+    padding: 2rem;
+    /* border: 2px solid #0000000e; */
 }
-.tarjeta {
-    width: 23rem;
-    border: 2px solid #0000000e;
-    border-radius: 8px;
-    margin:0.5rem;
-    padding: 0.5rem;
+
+
+/* Sección de información general */
+.general {
     display: flex;
     flex-direction: column;
-    align-items: center;
-
+    padding: 1rem;
+    border: 2px solid #0000000e;
+    border-radius: 8px;
 }
 
-.tarjeta img{
-    width: 20%;
+.general h3{
+    padding-bottom: 1rem;
+    padding-top: 0.5rem;
+}
+
+.general p{
+    padding-bottom: 1rem;
+}
+
+
+.sociales_general{
+    display: flex;
+    flex-direction:row;
+}
+
+.sociales_general img{
+    width: 2rem;
+    margin-right: 1rem;
+}
+
+
+/* Seccion formulario */
+.formulario{
+border: 2px solid #0000000e;
+border-radius: 8px;
+}
+.formulario h3{
+    text-align: center;
     padding: 1rem;
 }
 
-.tarjeta p{
-    text-align: justify;
+.formulario form {   
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
 }
+
+.formulario input{
+    padding: 1rem;
+    height: 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 6px;
+
+}
+
+.formulario textarea{
+    width: 23rem;
+    height: 10rem;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 6px;
+    resize: none;
+}
+
+.botones{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.botones button{
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 6px;
+    width: 6rem;
+}
+
+/* Seccion ubicacion*/
+
+.ubicacion{
+        padding-bottom: 2rem;
+}
+.ubicacion h3{
+    text-align: center;
+    padding-bottom: 1rem;
+
+}
+.ubicacion iframe{
+    border: 2px solid #0000000e;
+    border-radius: 8px;
+    width : 80vw;
+    height: 60vh;
+}
+
 
 /* Sección del pie de página */
 
@@ -131,5 +194,3 @@ footer {
 .sociales img{
     width: 2rem;
 }
-
-
