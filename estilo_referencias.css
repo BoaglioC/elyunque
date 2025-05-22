@@ -1,0 +1,169 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+            font-size: 16px;
+        }
+
+/* Se crean los colores como varibles para que sea mas facil realizar los cambios esteticos */
+:root{
+    --color_background_body:#a5727228;
+    --color_background_header:#9c4e4e; 
+    --color_background_main:#7a5050;
+    --color_background_footer:#9c4e4e; 
+}
+
+body {
+	background: var(--color_background_body);
+	font-family: "Ancizar Serif", serif;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+header {
+    background: var(--color_background_header);
+    width: 90vw;
+    height: 8rem;
+    margin-left: 5vw;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 3px 10px black;
+    /*Para que el menu me quede fijo al deplazarme por la pagina */
+    position: sticky;
+    right: 0;
+    top: 0;
+    
+}
+
+/* Sección del logo */
+.logo{
+    display: flex;
+    /* Quiero que la imagen y el texto del logo se alineen centralmente entre ellos */
+    align-items: center;
+}
+.logo img{
+    width: 6rem;
+}
+
+.logo h1{
+    font-size: 2.5rem;
+}
+
+/* Sección de la barra de navegación */
+
+nav{
+    height: auto;
+    justify-items: right; 
+	align-items: center ;
+
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+}
+
+nav li{
+    margin-right: 1rem;
+    list-style-type: none;
+}
+
+
+nav a{
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+a:hover {
+  background-color: var(--color_background_main);
+  padding: 0.2rem;
+  border-radius:4px;
+}
+/* Sección del cuerpo principal*/
+
+main {
+    background: var(--color_background_main);
+    width: 90vw;
+    margin-left: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+main h2{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+main p{
+    padding-bottom: 0.5rem;
+    text-align: justify;
+}
+
+/* Las tarjetas con las referencias */
+/* Se usa grid y cuando defino las columnas se usa autofit para que */
+/* responsive en la mayoria de los dispositivos */
+/* Luego hago el ultimo ajuste con media query */
+.resenias{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)) 
+
+}
+
+
+.card {
+    border: 2px solid #0000000e;
+    box-shadow: 0px 3px 10px black;
+    border-radius: 8px;
+    margin:0.5rem;
+    padding: 0.5rem;
+}
+
+.card:hover{
+  /* efecto de hover con transform: translateY(-5px) para que las 
+    tarjetas se eleven al pasar el mouse. */
+    transform: translateY(-5px) 
+}
+
+.card h3{
+   text-align: center;
+}
+
+.card p{
+    text-align: justify;
+}
+/* Sección del pie de página */
+
+footer {
+    background: var(--color_background_footer);
+    width: 90vw;
+    margin-left: 5vw;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3rem;
+    box-shadow: 0px 3px 10px black;
+}
+
+.sociales{
+    display: flex;
+    padding: 1rem;
+    gap: 1rem;
+}
+.sociales img{
+    width: 2rem;
+}
+
+/* Esta parte es solo para que sea visible en dispositivos de pantalla chica */
+@media only screen and (max-width: 600px) { 
+
+        html {
+            font-size: 12px;
+        }
+} 
