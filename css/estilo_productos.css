@@ -32,10 +32,13 @@ header {
     display: flex;
     flex-direction: column;
     box-shadow: 0px 3px 10px black;
-        /*Para que el menu me quede fijo al deplazarme por la pagina */
+    /*Para que el menu me quede fijo al deplazarme por la pagina */
     position: sticky;
     right: 0;
     top: 0;
+    /*Para que siempre el header este sobre los demas elementos */
+    /*y asi no se ve el contenido de lo que se desplaza por debajo del header */
+    z-index: 999;
 }
 
 /* Sección del logo */

@@ -37,6 +37,9 @@ header {
     position: sticky;
     right: 0;
     top: 0;
+    /*Para que siempre el header este sobre los demas elementos */
+    /*y asi no se ve el contenido de lo que se desplaza por debajo del header */
+    z-index: 999;
     
 }
 
