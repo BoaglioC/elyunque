@@ -40,7 +40,6 @@ header {
     /*Para que siempre el header este sobre los demas elementos */
     /*y asi no se ve el contenido de lo que se desplaza por debajo del header */
     z-index: 999;
-    
 }
 
 /* Sección del logo */
@@ -87,6 +86,7 @@ a:hover {
   padding: 0.2rem;
   border-radius:4px;
 }
+
 /* Sección del cuerpo principal*/
 
 main {
@@ -96,64 +96,70 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2rem;
 }
 
-main h2{
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-}
-main p{
-    padding-bottom: 0.5rem;
-    text-align: justify;
-}
-
-/* Seccion reseñas */
-
-.resenia {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* Seccion Resumen de tu compra*/
+.resumen{
+    min-width: 25rem ;
     border: 2px solid #0000000e;
     border-radius: 8px;
     box-shadow: 0px 3px 10px black;
-}
-
-.resenia button{
-    padding: 0.5rem;
-    margin-bottom: 0.5rem;
-    border-radius: 6px;
-    width: 10rem;
-    font-size: 1rem;
-    width: 8rem;
-}
-
-/* Las tarjetas con las referencias */
-.tarjeta {
-    margin-top:0.5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.tarjeta img{
-    width: 8rem;
-    height: 8rem;
-    border-radius: 4rem;
+    margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
-.tarjeta .texto p{
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+.resumen h3{
+    text-align: center;
 }
 
+.resumen #detalle{
+    text-align:left;
+    margin-left: 0.5rem;
+}
+
+
+/* Seccion formulario */
+#formulario{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    min-width: 25rem ;
+    border: 2px solid #0000000e;
+    border-radius: 8px;
+    box-shadow: 0px 3px 10px black;
+    margin-bottom: 1rem;
+}
+
+#formulario input{
+    padding: 1rem;
+    height: 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 6px;
+
+}
+
+#formulario #carritoData #totalCarrito{
+    height: 10rem;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 6px;
+    resize: none;
+}
+
+#formulario #botonEnviar{
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 6px;
+    width: 12rem;
+    font-size: 1rem;
+}
 
 /* Sección del pie de página */
 
 footer {
     background: var(--color_background_footer);
     width: 90vw;
+    height: 8rem;
     margin-left: 5vw;
     height: 10rem;
     display: flex;
@@ -172,10 +178,43 @@ footer {
     width: 2rem;
 }
 
+/* Esta parte es solo para que sea visible en dispositivos de pantalla mediana*/
+@media only screen and (max-width: 850px) { 
+
+        .contenedor{
+            /* Creo el grid para la informacion General, el formulario y el mapa de ubicacion */
+            grid-template-columns: 1fr ;
+            grid-template-rows: 27rem 27rem 1fr;         
+        }
+
+        .general {
+            /* Ubico la seccion en el primer cuadrante */
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+        }
+
+        .formulario {
+            /* Ubico la seccion en el segundo cuadrante */
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+        }
+
+        .ubicacion{
+            /* Ubico la seccion en el tercer y cuarto cuadrante */
+                grid-column: 1 / 2;
+                grid-row: 3 / 4;
+                padding-bottom: 1rem;
+        }
+
+}
+
 /* Esta parte es solo para que sea visible en dispositivos de pantalla chica */
 @media only screen and (max-width: 600px) { 
 
         html {
             font-size: 12px;
         }
+
+
+
 } 

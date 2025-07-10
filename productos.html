@@ -7,7 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-   
+    
+
     <!-- Linea de estilos para los productos en oferta -->
     <link rel="stylesheet" href=".\css\estilo_productos.css">
     <title>Productos</title>
@@ -36,6 +37,22 @@
 
 
     <main>
+        <!-- Carrito de compras -->
+        <h2>Carrito de Compras</h2>
+        <section id="carrito">
+                <!-- Listado de productos en el carrito -->
+                <ul id="lista-carrito"></ul>
+                <!-- Total de la compra -->
+                <p>Total: $<span id="total-carrito">0.00</span></p>
+                <!-- Botones del Carrito de compras-->
+                 <section class="botones_carrito">
+                    <button id="btnPagar">Pagar</button>
+                    <button id="vaciar-carrito">Vaciar Carrito</button>
+                </section>
+        </section>
+
+
+        <!-- Listado de productos -->
 
         <h2>Herramientas</h2>
 
@@ -46,18 +63,17 @@
                     <img src=".\imagenes\herramientas\martillo.png" alt="Martillo">
                 </section>
                 <p>Martillo de uso general</p>
-                <p>Precio: $8000,00</p>
-                <button>Agregar al Carrito</button>
+                <p>Precio: $8000.00</p>
+                <button class="comprar" data-id="1" data-nombre="Martillo" data-precio="8000.00">Agregar al Carrito</button>
             </section>
 
             <section class="tarjeta">
                 <section class="marco">
                     <img src=".\imagenes\herramientas\esmeril_angular.png" alt="Esmeril angular" >                        
                 </section>
-
                 <p>Esmeril angular</p>
-                <p>Precio: $120000,00</p>
-                <button>Agregar al Carrito</button>                    
+                <p>Precio: $120000.00</p>
+                <button class="comprar" data-id="1" data-nombre="Esmeril angular" data-precio="120000.00">Agregar al Carrito</button>                    
             </section>
 
             <section class="tarjeta">
@@ -65,8 +81,8 @@
                     <img src=".\imagenes\herramientas\destornillador.png" alt="Destornilladores" >                        
                 </section>
                 <p>Destornilladores</p>
-                <p>Precio: $12000,00</p>
-                <button>Agregar al Carrito</button>                    
+                <p>Precio: $12000.00</p>
+                <button class="comprar" data-id="1" data-nombre="Destornilladores" data-precio="12000.00">Agregar al Carrito</button>                    
             </section>
 
              <section class="tarjeta">
@@ -74,8 +90,8 @@
                     <img src=".\imagenes\herramientas\lijadora_excentrica.png" alt="Lijadora excentrica" >                        
                 </section>
                 <p>Lijadora excentrica</p>
-                <p>Precio: $115000,00</p>
-                <button>Agregar al Carrito</button>                    
+                <p>Precio: $115000.00</p>
+                <button class="comprar" data-id="1" data-nombre="Lijadora excentrica" data-precio="115000.00" >Agregar al Carrito</button>                    
             </section>
 
             <section class="tarjeta">
@@ -83,8 +99,8 @@
                     <img src=".\imagenes\herramientas\taladro.png" alt="Taladro" >                        
                 </section>
                 <p>Taladro</p>
-                <p>Precio: $83000,00</p>
-                <button>Agregar al Carrito</button>                    
+                <p>Precio: $83000.00</p>
+                <button class="comprar" data-id="1" data-nombre="Taladro"  data-precio="83000.00">Agregar al Carrito</button>                    
             </section>       
         </section>
 
@@ -96,16 +112,16 @@
                     <img src=".\imagenes\insumos\brocas_set.png" alt="Set de Brocas" >
                 </section>
                 <p>Set de brocas</p>
-                <p>Precio: $15000,00</p>
-                <button>Agregar al Carrito</button>
+                <p>Precio: $15000.00</p>
+                <button class="comprar" data-id="1" data-nombre="Set de Brocas" data-precio="15000.00">Agregar al Carrito</button>
             </section>
             <section class="tarjeta">
                 <section class="marco">
                     <img src=".\imagenes\insumos\disco_corte.png" alt="Disco de corte" >
                 </section>
                 <p>Disco de corte</p>
-                <p>Precio: $5000,00</p>
-                <button>Agregar al Carrito</button>
+                <p>Precio: $5000.00</p>
+                <button class="comprar" data-id="1" data-nombre="Disco de corte" data-precio="5000.00">Agregar al Carrito</button>
             </section>
 
             <section class="tarjeta">
@@ -113,8 +129,8 @@
                     <img src=".\imagenes\insumos\disco_pulir.png" alt="Disco de pulir" >
                 </section>
                 <p>Disco de pulir</p>
-                <p>Precio: $5000,00</p>
-                <button>Agregar al Carrito</button>
+                <p>Precio: $5000.00</p>
+                <button class="comprar" data-id="1" data-nombre="Disco de pulir" data-precio="5000.00">Agregar al Carrito</button>
             </section>
 
             <section class="tarjeta">
@@ -122,8 +138,8 @@
                     <img src=".\imagenes\insumos\disco_sierra.png" alt="Disco sierra" >
                 </section>
                 <p>Disco sierra</p>
-                <p>Precio: $5000,00</p>
-                <button>Agregar al Carrito</button>
+                <p>Precio: $5000.00</p>
+                <button class="comprar" data-id="1" data-nombre="Disco sierra" data-precio="5000.00">Agregar al Carrito</button>
             </section>
 
             <section class="tarjeta">
@@ -131,8 +147,8 @@
                     <img src=".\imagenes\insumos\brocas_escalonadas.png" alt="Brocas escalonadas" >
                 </section>
                 <p>Brocas escalonadas</p>
-                <p>Precio: $55300,00</p>
-                <button>Agregar al Carrito</button>
+                <p>Precio: $55300.00</p>
+                <button class="comprar" data-id="1" data-nombre="Brocas escalonadas" data-precio="55300.00" >Agregar al Carrito</button>
             </section>
         </section>
 
@@ -144,8 +160,8 @@
                     <img src=".\imagenes\seguridad\botin_seguridad.png" alt="Botines de seguridad" >
                 </section>                
                 <p>Botines de Seguridad</p>
-                <p>Precio: $80000,00</p>
-                <button>Agregar al Carrito</button>
+                <p>Precio: $80000.00</p>
+                <button class="comprar" data-id="1" data-nombre="Botines de seguridad"  data-precio="$80000.00">Agregar al Carrito</button>
             </section>
 
             <section class="tarjeta">
@@ -153,8 +169,8 @@
                     <img src=".\imagenes\seguridad\guante_cuero.png" alt="Guantes de cuero">
                 </section>
                 <p>Guantes de cuero</p>
-                <p>Precio: $9000,00</p>
-                <button>Agregar al Carrito</button>
+                <p>Precio: $9000.00</p>
+                <button class="comprar" data-id="1" data-nombre="Guantes de cuero" data-precio="9000.00">Agregar al Carrito</button>
             </section>
 
             <section class="tarjeta">
@@ -162,8 +178,8 @@
                     <img src=".\imagenes\seguridad\mascara_filtro.png" alt="Mascara con filtro">
                 </section>
                 <p>Mascara con filtro</p>
-                <p>Precio: $21000,00</p>
-                <button>Agregar al Carrito</button>
+                <p>Precio: $21000.00</p>
+                <button class="comprar" data-id="1" data-nombre="Mascara con filtro" data-precio="21000.00">Agregar al Carrito</button>
             </section>
 
             <section class="tarjeta">
@@ -171,8 +187,8 @@
                     <img src=".\imagenes\seguridad\mascara_soldar_fotosensible.png" alt="Mascara de soldar con visor fotosensible">
                 </section>
                 <p>Mascara de soldar con visor fotosensible</p>
-                <p>Precio: $32800,00</p>
-                <button>Agregar al Carrito</button>
+                <p>Precio: $32800.00</p>
+                <button class="comprar" data-id="1" data-nombre="Mascara de soldar con visor fotosensible" data-precio="32800.00">Agregar al Carrito</button>
             </section>
 
         </section>
@@ -190,5 +206,7 @@
         </section>
     </footer>
 
+    <!-- Java Script -->
+    <script src=".\JS\tienda.js"></script>
 </body>
 </html>
